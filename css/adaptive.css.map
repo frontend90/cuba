@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;EAClC,AACE,OADK,CACH,YAAY,CAAC;IACb,MAAM,EAAE,IAAI;GAAG",
+    "sources": [
+        "../sass/blocks/adaptive.sass"
+    ],
+    "names": [],
+    "file": "adaptive.css"
+}

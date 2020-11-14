@@ -1,0 +1,194 @@
+@media screen and ( max-width: 1200px )
+  .advantages
+    &::before
+      width: 100%
+  .cadillac
+    &::before
+      width: 100%
+    & .img 
+      width: 100%
+      height: auto 
+      &:before 
+        display: none 
+      &::after
+        display: none 
+@media screen and ( max-width: 900px )
+  .advantages
+    & .advantages-wrap
+      grid-template-columns: 1fr 1fr 
+  .about
+    & .about-wrap
+      & .block 
+        height: auto 
+        position: relative
+        margin-bottom: 480px
+        & .content 
+          width: 100%
+        &:nth-child(1)
+          background: none 
+          &::before
+            content: ''
+            position: absolute
+            background: url(../img/about/1.png) no-repeat 
+            background-position: center 
+            left: 0
+            top: 100%
+            height: 430px
+            width: 100%
+        &:nth-child(2)
+          background: none 
+          margin-bottom: 430px 
+          &::before
+            content: ''
+            position: absolute
+            background: url(../img/about/2.png) no-repeat 
+            background-position: center 
+            left: 0
+            top: 100%
+            height: 430px
+            width: 100%
+  .footer
+    & .footer-wrap 
+      grid-template-columns: 1fr 1fr 
+      grid-row-gap: 50px 
+@media screen and ( max-width: 700px )
+  .header 
+    & .header-main 
+      & .title 
+        & h1 
+          font-size: 150px
+    & .nav 
+      & .menu
+        display: grid 
+        justify-content: center
+        align-items: center
+        height: 65px 
+        & .burger 
+          display: grid 
+          align-items: center
+          justify-content: flex-end
+          width: 30px 
+          height: 20px
+          position: relative 
+          z-index: 9999
+          &.active 
+            position: fixed
+            bottom: 20px
+            left: 50%
+            transform: translateX(-50%)
+          &.active span 
+            display: none 
+          &.active::before 
+            transform: rotate(45deg)
+            background: #ffffff
+          &.active::after 
+            top: 0
+            transform: rotate(-45deg)
+            background: #ffffff
+          & span 
+            background: #736F72
+            height: 3px 
+            width: 20px 
+            transition: .3s linear 
+          &::before
+            content: ''
+            position: absolute
+            width: 30px 
+            height: 3px 
+            background: #736F72
+            top: 0
+            transition: .3s linear 
+          &::after
+            content: ''
+            position: absolute
+            width: 30px 
+            height: 3px 
+            background: #736F72
+            bottom: 0
+            transition: .3s linear  
+        & .main-menu 
+          position: fixed
+          top: 0
+          left: 0
+          width: 100%
+          height: 100%
+          background: rgba(#121212,.7)
+          z-index: 9998
+          display: none 
+          text-align: center
+          padding-top: 50px 
+          & a 
+            display: block
+            margin: 20px 0 
+            padding: 10px 
+            color: #ffffff
+            &::before
+              display: none 
+          &.show 
+            display: block 
+  .about
+    & .about-wrap
+      & .block 
+        & .content 
+          padding: 15px 
+          margin-bottom: 30px 
+        &:nth-child(1)
+          & .content 
+            &::before
+              top: 0
+              left: 0
+            &::after
+              bottom: 0
+              right: 0
+        &:nth-child(2)
+          & .content 
+            &::before
+              top: 0
+              right: 0
+            &::after
+              bottom: 0
+              left: 0
+  .gallery
+    & .gallery-slider-wrap
+      width: 100%
+@media screen and ( max-width: 600px )
+  .header 
+    & .header-main 
+      & .title 
+        & h1 
+          font-size: 100px
+      & p 
+        font-size: 16px 
+  .footer
+    & .footer-wrap 
+      grid-template-columns: 1fr
+      & .block 
+        & .links 
+          & a 
+            white-space: normal
+@media screen and ( max-width: 500px )
+  .header 
+    & .header-main 
+      padding: 40px 
+      & .title 
+        & h1 
+          font-size: 70px
+      &::before
+        left: 20px
+        top: 20px 
+        width: calc(100% - 40px)
+        height: calc(100% - 40px)
+      & p 
+        font-size: 14px 
+        justify-content: center
+        line-height: normal
+        &::before, &::after 
+          display: none 
+  .advantages
+    & .title 
+      & a 
+        justify-content: center
+        margin-top: 20px 
+    & .advantages-wrap
+      grid-template-columns: 1fr 
+      grid-gap: 50px 

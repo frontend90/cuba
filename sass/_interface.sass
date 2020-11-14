@@ -1,0 +1,45 @@
+@font-face 
+  font-family: 'fa-solid-900'
+  src: url('../fonts/fa-solid-900.ttf')
+@mixin solid
+  font-family: 'fa-solid-900'
+@font-face 
+  font-family: 'fa-brands-400'
+  src: url('../fonts/fa-brands-400.ttf')
+@mixin brand
+  font-family: 'fa-brands-400'
+@font-face 
+  font-family: 'Georgia-Bold'
+  src: url('../fonts/Georgia-Bold.ttf')
+@mixin geor_bold
+  font-family: 'Georgia-Bold'
+@font-face 
+  font-family: 'Georgia-Regular'
+  src: url('../fonts/Georgia-Regular.ttf')
+@mixin geor_reg 
+  font-family: 'Georgia-Regular'
+@font-face 
+  font-family: 'Lato-Bold'
+  src: url('../fonts/Lato-Bold.ttf')
+@mixin lat_bold
+  font-family: 'Lato-Bold'
+@font-face 
+  font-family: 'Lato-Regular'
+  src: url('../fonts/Lato-Regular.ttf')
+@mixin lat_reg 
+  font-family: 'Lato-Regular'
+body 
+  color: #505050
+  font-size: 16px 
+  +lat_reg 
+.container 
+  max-width: 1000px 
+  margin: auto
+  padding: 0 15px 
+  height: 100%
+.fas 
+  +solid 
+.fab 
+  +brand 
+h1, h2, h3, h4, h5, h6 
+  +geor_reg 

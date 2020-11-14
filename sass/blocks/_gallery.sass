@@ -1,0 +1,41 @@
+.gallery
+  padding: 80px 0 
+  & .title 
+    padding-bottom: 45px 
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 50%
+      transform: translateX(-50%)
+      background: rgba(#D0D4D8,.5)
+      width: 270px 
+      height: 1px 
+    & h3 
+      text-align: center
+      font-size: 32px 
+      color: #4E5665
+    & p 
+      margin-top: 40px 
+      line-height: 28px 
+  & .gallery-slider-wrap
+    position: relative
+    width: 680px
+    margin: 55px auto 0 
+    & .gallery-slider
+      & .slick-list 
+        overflow: hidden
+        & .slick-track 
+          display: flex 
+          & .gallery-slider-block
+            text-align: center
+            & img 
+              object-fit: cover 
+              width: 100%
+    & button 
+      position: absolute
+      top: calc(50% + 20px)
+      transform: translateY(calc(-50% - 20px))
+    & .gallery-slider-right
+      right: 0

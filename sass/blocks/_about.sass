@@ -1,0 +1,75 @@
+.about
+  padding: 80px 0 120px 0 
+  & .title 
+    & h3
+      text-align: center
+      color: #4E5665
+      font-size: 32px  
+    & p 
+      margin-top: 10px 
+      line-height: 28px 
+  & .about-wrap
+    margin-top: 70px 
+    & .block 
+      display: grid 
+      align-items: center
+      height: 430px 
+      margin-bottom: 100px 
+      & .content 
+        width: 470px
+        background: #ffffff
+        position: relative
+        padding: 40px 
+        & h5
+          color: #4E5665
+          font-size: 24px  
+        & p 
+          margin-top: 20px 
+          line-height: 28px 
+      &:nth-child(1)
+        background: url(../img/about/1.png) no-repeat 
+        background-position-x: 400px
+        & .content 
+          &::before
+            content: ''
+            position: absolute
+            width: 33px 
+            height: 33px 
+            top: 19px
+            left: 19px 
+            border-left: 2px solid #ECB84C
+            border-top: 2px solid #ECB84C
+          &::after 
+            content: ''
+            position: absolute
+            width: 33px 
+            height: 33px 
+            bottom: 19px
+            right: 19px 
+            border-right: 2px solid #ECB84C
+            border-bottom: 2px solid #ECB84C
+      &:nth-child(2)
+        background: url(../img/about/2.png) no-repeat 
+        margin-bottom: 0
+        & .content 
+          justify-self: end 
+          &::before
+            content: ''
+            position: absolute
+            width: 33px 
+            height: 33px 
+            top: 19px
+            right: 19px 
+            border-right: 2px solid #ECB84C
+            border-top: 2px solid #ECB84C
+          &::after 
+            content: ''
+            position: absolute
+            width: 33px 
+            height: 33px 
+            bottom: 19px
+            left: 19px 
+            border-left: 2px solid #ECB84C
+            border-bottom: 2px solid #ECB84C
+        
+        
